@@ -79,7 +79,6 @@ namespace Scaffold {
             Vector2 dir = targetPos - (Vector2)transform.position;
             if (dir.sqrMagnitude + float.Epsilon < constrainRange * constrainRange) {
                 Move_Stop();
-                // inputCom.autoMove = false;
                 return;
             }
             Move_Apply(dir, moveSpeed, dt);

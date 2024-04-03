@@ -17,14 +17,15 @@ namespace Scaffold {
 
             if (keybindingCom.IsKeyPressing(InputKeyEnum.MoveLeft)) {
                 moveAxis.x = -1;
-            } else if (keybindingCom.IsKeyPressing(InputKeyEnum.MoveRight)) {
+            }
+            if (keybindingCom.IsKeyPressing(InputKeyEnum.MoveRight)) {
                 moveAxis.x = 1;
-            } else if (keybindingCom.IsKeyPressing(InputKeyEnum.MoveUp)) {
+            }
+            if (keybindingCom.IsKeyPressing(InputKeyEnum.MoveUp)) {
                 moveAxis.y = 1;
-            } else if (keybindingCom.IsKeyPressing(InputKeyEnum.MoveDown)) {
+            }
+            if (keybindingCom.IsKeyPressing(InputKeyEnum.MoveDown)) {
                 moveAxis.y = -1;
-            } else {
-                moveAxis = Vector2.zero;
             }
 
         }
